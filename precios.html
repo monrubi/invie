@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>precios de tus mejores guitarras!</title>
+    <link rel="stylesheet" href="css/invie.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+  </head>
+<body>
+<header id="header" class="header contenedor"> <!-- header -->
+      <figure class="logotipo"> <!-- logotipo -->
+        <img src="imgs/invie.png" width="186" height="60" alt="Invie logotipo" />
+      </figure>
+      <nav class="menu"> <!-- menu -->
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="index.html#guitarras">Guitarras</a>
+          </li>
+          <li>
+            <a href="precios.html">Precios</a>
+          </li> 
+        </ul>
+      </nav>
+    </header>
+    <section class="tabla">
+    	<div class="contenedor">
+	    	<table>
+	    		<thead>
+	    			<tr>
+	    				<th>Modelo</th>
+	    				<th>Precio</th>
+	    				<th>Descripción</th>
+	    			</tr>
+	    		</thead>
+	    		<tbody>
+	    			<tr>
+	    				<td>Invie Classic</td>
+	    				<td>$$$</td>
+	    				<td>Guitarra vintage</td>
+	    			</tr>
+	    			<tr>
+	    				<td>Invie Acustic</td>
+	    				<td>$$$</td>
+	    				<td>Guitarra pro</td>
+	    			</tr>
+	    			<tr>
+	    				<td>Ambas</td>
+	    				<td>-10%</td>
+	    				<td>Ambas con descuento</td>
+	    			</tr>
+	    		</tbody>
+	    	</table>
+    	</div>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto"> <!-- contacto -->
+          <img src="imgs/invie-white.png" alt="logotipo blanco">
+          <a href="tel:+5215541298451"/><strong>Teléfono</strong><span>3024456678</span>
+          <!--<a href="mailto:contacto@invie.com"/>--><strong>E-mail</strong><span>contacto@invie.com</span>
+        </div>
+        <form class="formulario"> <!-- formulario-->
+          <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" /> <!-- value es el texto por defecto, placeholder la sugerencia, con nombre sabe cual es el atributo que esta llenando el formulario al enviarse, si pones cheked lo da preseleccionado-->
+            <label for="correo">E-mail</label>
+            <input type="email" id="correo" required />
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" id="mujer" name="sexo" value="mujer">Mujer
+              </label>
+              <!-- mediante el name es que sabe que valor de una categoria puede escoger, el value es lo que se manda a backend-->
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion">Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+              </label>
+            </div>
+          </div>
+          <div class="col2">
+            <label for="texto">Comentarios</label>
+            <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar" class="button" />
+          </div>
+        </form>
+      </div>
+    </footer>
+</body>
+</html>

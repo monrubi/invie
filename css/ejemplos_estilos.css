@@ -1,0 +1,42 @@
+/*selector universal*/
+*{
+	boder: 1px solid red;
+	margin: 10px;
+}
+
+/*selector de etiqueta*/
+header{
+	background: blue;
+}
+
+section{
+	background: purple;
+}
+
+/*selector descendente*/
+article h3{
+	color: green;
+}
+
+/*selectores de clase
+debes poner antes la clase en html*/
+.title-a{
+	background: yellow;
+}
+
+.title-b{
+	background: salmon;
+}
+
+/*selector de id*/
+#header{
+	border: 3px solid peru;
+}
+
+#portada{
+	border: 3px solid brown;
+}
+
+#guitarras{
+	border: 3px solid green;
+}
